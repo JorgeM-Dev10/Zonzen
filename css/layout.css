@@ -406,7 +406,10 @@
 @media (max-width: 900px) {
   .nav { display: none; }
   .hamburguesa { display: flex; }
-  .solo-escritorio { display: none; }
+
+  /* Dos clases: gana por especificidad a .btn y .contador, que se
+     declaran despues en components.css. */
+  .cabecera__acciones .solo-escritorio { display: none; }
 
   .seccion__cabecera--partida,
   .portico__rejilla,
