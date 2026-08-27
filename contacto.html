@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto &middot; Zonzen</title>
+<meta name="description" content="Agenda tu visita o escribenos. Av. Las Fuentes 218, Col. Jardines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor cabecera__barra">
+    <a class="marca" href="index.html">
+      <span class="marca__nombre">ZONZEN</span>
+      <span class="marca__tipo">Wellness Center</span>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__enlace" href="gimnasio.html">Gimnasio y clases</a>
+      <a class="nav__enlace" href="spa.html">Spa</a>
+      <a class="nav__enlace" href="cafeteria.html">Cafeteria</a>
+      <a class="nav__enlace" href="eventos.html">Eventos</a>
+      <a class="nav__enlace" href="membresias.html">Membresias</a>
+    </nav>
+
+    <div class="cabecera__acciones">
+      <button class="contador solo-escritorio" type="button" data-contador>
+        <span>Reservas</span>
+        <span class="contador__num">0</span>
+      </button>
+      <a class="btn btn--primario btn--pequeno solo-escritorio" href="contacto.html">
+        <span class="btn__texto">Visita gratis</span>
+      </a>
+      <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-movil" id="menu-movil">
+  <a class="nav-movil__enlace" href="gimnasio.html"><span>Gimnasio y clases</span><span class="nav-movil__clave">Fuerza</span></a>
+  <a class="nav-movil__enlace" href="spa.html"><span>Spa</span><span class="nav-movil__clave">Reposo</span></a>
+  <a class="nav-movil__enlace" href="cafeteria.html"><span>Cafeteria</span><span class="nav-movil__clave">Mesa</span></a>
+  <a class="nav-movil__enlace" href="eventos.html"><span>Eventos</span><span class="nav-movil__clave">Salon</span></a>
+  <a class="nav-movil__enlace" href="membresias.html"><span>Membresias</span><span class="nav-movil__clave">Planes</span></a>
+  <a class="nav-movil__enlace" href="contacto.html"><span>Contacto</span><span class="nav-movil__clave">Visita</span></a>
+
+  <div class="nav-movil__pie">
+    <button class="contador" type="button" data-contador>
+      <span>Mis reservas</span>
+      <span class="contador__num">0</span>
+    </button>
+  </div>
+</div>
+
+<main id="principal">
+
+  <section class="portico" style="--ambiente:var(--salvia)">
+    <div class="portico__campo" aria-hidden="true"></div>
+    <div class="contenedor">
+      <div class="portico__rejilla">
+        <div>
+          <nav class="portico__migas" aria-label="Ruta">
+            <a href="index.html">Zonzen</a>
+            <span aria-hidden="true">/</span>
+            <span>Contacto</span>
+          </nav>
+          <h1 class="portico__titulo entra" data-entrada="120">Pasa cuando quieras.</h1>
+        </div>
+        <p class="guia entra" data-entrada="260">No hace falta cita para conocer el lugar. Si prefieres que te esperemos con un coach libre, escribenos y lo agendamos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="partido" data-form-bloque>
+        <div data-revelar="0">
+          <form class="formulario" data-form-demo novalidate>
+            <div class="campo-form">
+              <label class="etiqueta-form" for="ct-nombre">Nombre</label>
+              <input class="entrada" type="text" id="ct-nombre" name="nombre" placeholder="Tu nombre" required minlength="2">
+              <span class="error-form" data-error="nombre"></span>
+            </div>
+
+            <div class="campo-form campo-form--doble">
+              <div class="campo-form">
+                <label class="etiqueta-form" for="ct-correo">Correo</label>
+                <input class="entrada" type="email" id="ct-correo" name="correo" placeholder="tu@correo.com" required>
+                <span class="error-form" data-error="correo"></span>
+              </div>
+              <div class="campo-form">
+                <label class="etiqueta-form" for="ct-tel">Telefono</label>
+                <input class="entrada" type="tel" id="ct-tel" name="telefono" placeholder="81 1234 5678">
+              </div>
+            </div>
+
+            <div class="campo-form">
+              <label class="etiqueta-form" for="ct-interes">Que te interesa</label>
+              <select class="entrada" id="ct-interes" name="interes" required>
+                <option value="">Elige una opcion</option>
+                <option>Membresia</option>
+                <option>Clases</option>
+                <option>Spa y masajes</option>
+                <option>Salon de eventos</option>
+                <option>Otra cosa</option>
+              </select>
+              <span class="error-form" data-error="interes"></span>
+            </div>
+
+            <div class="campo-form">
+              <label class="etiqueta-form" for="ct-mensaje">Mensaje</label>
+              <textarea class="entrada" id="ct-mensaje" name="mensaje" placeholder="Cuentanos que necesitas"></textarea>
+            </div>
+
+            <button class="btn btn--primario btn--ancho" type="submit">
+              <span class="btn__texto">Enviar mensaje</span>
+              <span class="btn__flecha" aria-hidden="true">&rarr;</span>
+            </button>
+          </form>
+
+          <div data-form-respuesta></div>
+        </div>
+
+        <div data-revelar="1">
+          <span class="clave seccion__clave clave--oro">Donde estamos</span>
+          <h2 style="margin-bottom:var(--e6)">Av. Las Fuentes 218</h2>
+
+          <div class="dato-bloque">
+            <span class="dato-bloque__clave">Direccion</span>
+            <p class="dato-bloque__valor">Col. Jardines, 64620<br>Monterrey, Nuevo Leon</p>
+          </div>
+
+          <div class="dato-bloque">
+            <span class="dato-bloque__clave">Horario</span>
+            <p class="dato-bloque__valor">
+              Lunes a viernes &middot; 05:30 &mdash; 23:00<br>
+              Sabado y domingo &middot; 07:00 &mdash; 20:00
+            </p>
+          </div>
+
+          <div class="dato-bloque">
+            <span class="dato-bloque__clave">Telefono</span>
+            <p class="dato-bloque__valor"><a href="tel:+528112345678">+52 81 1234 5678</a></p>
+          </div>
+
+          <div class="dato-bloque">
+            <span class="dato-bloque__clave">Correo</span>
+            <p class="dato-bloque__valor"><a href="mailto:hola@zonzen.mx">hola@zonzen.mx</a></p>
+          </div>
+
+          <div class="dato-bloque">
+            <span class="dato-bloque__clave">Estacionamiento</span>
+            <p class="dato-bloque__valor">Dos niveles, sin costo para miembros</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--compacta">
+    <div class="contenedor">
+      <div class="mapa campo" style="--tono:var(--salvia);--tono-2:var(--oro)" data-revelar="0">
+        <div style="position:relative;z-index:2">
+          <span class="mapa__pin" aria-hidden="true"></span>
+          <p class="clave clave--oro" style="margin-bottom:var(--e2)">Zonzen Wellness Center</p>
+          <p class="dato" style="font-size:var(--fs-sm);color:var(--vapor-medio)">
+            25.6714&deg; N, 100.3099&deg; W
+          </p>
+          <p style="font-size:var(--fs-xs);color:var(--vapor-tenue);margin-top:var(--e3)">
+            Demo: el mapa interactivo se conecta al publicar el sitio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <div class="cierre__campo" aria-hidden="true"></div>
+    <div class="contenedor contenedor--angosto">
+      <span class="clave clave--oro" data-revelar="0" style="margin-bottom:var(--e5)">Primera visita</span>
+      <h2 class="cierre__titulo" data-revelar="1">O simplemente ven.</h2>
+      <p class="guia" style="margin-inline:auto" data-revelar="2">Estamos abiertos desde las cinco y media entre semana. Pregunta en recepcion por un recorrido: casi siempre hay un coach libre.</p>
+      <div class="cierre__acciones" data-revelar="3">
+        <button class="btn btn--primario" type="button"
+                data-reservar data-tipo="Visita guiada"
+                data-titulo="Recorrido por Zonzen"
+                data-glosa="Cuarenta minutos con un coach: conoces las cuatro areas y pruebas el circuito.">
+          <span class="btn__texto">Reservar mi visita</span>
+          <span class="btn__flecha" aria-hidden="true">&rarr;</span>
+        </button>
+        <a class="btn btn--fantasma" href="membresias.html">
+          <span class="btn__texto">Ver membresias</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <a class="marca" href="index.html">
+          <span class="marca__nombre">ZONZEN</span>
+          <span class="marca__tipo">Wellness Center</span>
+        </a>
+        <p class="prosa" style="margin-top:var(--e5);font-size:var(--fs-sm)">
+          Calor, agua, movimiento y reposo bajo un mismo techo.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Espacios</h3>
+        <div class="pie__lista">
+          <a href="gimnasio.html">Gimnasio y clases</a>
+          <a href="spa.html">Spa y masajes</a>
+          <a href="cafeteria.html">Cafeteria</a>
+          <a href="eventos.html">Salon de eventos</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Visitar</h3>
+        <div class="pie__lista">
+          <a href="membresias.html">Membresias</a>
+          <a href="contacto.html">Contacto</a>
+          <span>Lun a vie &middot; 05:30 &mdash; 23:00</span>
+          <span>Sab y dom &middot; 07:00 &mdash; 20:00</span>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Contacto</h3>
+        <div class="pie__lista">
+          <span>Av. Las Fuentes 218</span>
+          <span>Col. Jardines &middot; 64620</span>
+          <a href="tel:+528112345678">+52 81 1234 5678</a>
+          <a href="mailto:hola@zonzen.mx">hola@zonzen.mx</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pie__base">
+      <span>&copy; 2026 Zonzen Wellness Center</span>
+      <span class="pie__aviso">Demo &middot; sitio de demostracion, sin operacion real</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/datos.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salon de eventos &middot; Zonzen</title>
+<meta name="description" content="Tres espacios para juntas, talleres y celebraciones, de 40 a 140 personas, con catering de nuestra cocina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor cabecera__barra">
+    <a class="marca" href="index.html">
+      <span class="marca__nombre">ZONZEN</span>
+      <span class="marca__tipo">Wellness Center</span>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__enlace" href="gimnasio.html">Gimnasio y clases</a>
+      <a class="nav__enlace" href="spa.html">Spa</a>
+      <a class="nav__enlace" href="cafeteria.html">Cafeteria</a>
+      <a class="nav__enlace" href="eventos.html" aria-current="page">Eventos</a>
+      <a class="nav__enlace" href="membresias.html">Membresias</a>
+    </nav>
+
+    <div class="cabecera__acciones">
+      <button class="contador solo-escritorio" type="button" data-contador>
+        <span>Reservas</span>
+        <span class="contador__num">0</span>
+      </button>
+      <a class="btn btn--primario btn--pequeno solo-escritorio" href="contacto.html">
+        <span class="btn__texto">Visita gratis</span>
+      </a>
+      <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-movil" id="menu-movil">
+  <a class="nav-movil__enlace" href="gimnasio.html"><span>Gimnasio y clases</span><span class="nav-movil__clave">Fuerza</span></a>
+  <a class="nav-movil__enlace" href="spa.html"><span>Spa</span><span class="nav-movil__clave">Reposo</span></a>
+  <a class="nav-movil__enlace" href="cafeteria.html"><span>Cafeteria</span><span class="nav-movil__clave">Mesa</span></a>
+  <a class="nav-movil__enlace" href="eventos.html"><span>Eventos</span><span class="nav-movil__clave">Salon</span></a>
+  <a class="nav-movil__enlace" href="membresias.html"><span>Membresias</span><span class="nav-movil__clave">Planes</span></a>
+  <a class="nav-movil__enlace" href="contacto.html"><span>Contacto</span><span class="nav-movil__clave">Visita</span></a>
+
+  <div class="nav-movil__pie">
+    <button class="contador" type="button" data-contador>
+      <span>Mis reservas</span>
+      <span class="contador__num">0</span>
+    </button>
+  </div>
+</div>
+
+<main id="principal">
+
+  <section class="portico" style="--ambiente:#6E93A0">
+    <div class="portico__campo" aria-hidden="true"></div>
+    <div class="contenedor">
+      <div class="portico__rejilla">
+        <div>
+          <nav class="portico__migas" aria-label="Ruta">
+            <a href="index.html">Zonzen</a>
+            <span aria-hidden="true">/</span>
+            <span>Eventos</span>
+          </nav>
+          <h1 class="portico__titulo entra" data-entrada="120">Tres salones y una cocina propia.</h1>
+        </div>
+        <p class="guia entra" data-entrada="260">Desde una junta de veinte personas hasta una celebracion de ciento cuarenta. El catering sale de la misma cocina que la cafeteria.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <header class="seccion__cabecera seccion__cabecera--partida" data-revelar="0">
+        <div>
+          <span class="clave seccion__clave">Los salones</span>
+          <h2>Elige por capacidad, no por catalogo.</h2>
+        </div>
+        <p class="prosa">
+          Los tres se rentan por bloques de cuatro horas e incluyen montaje, audio y
+          una persona de apoyo durante todo el evento.
+        </p>
+      </header>
+
+      <div class="rejilla rejilla--3">
+        <article class="ficha" style="--tono:var(--salvia)" data-revelar="0">
+          <div class="ficha__campo campo" style="--tono:var(--salvia);--tono-2:#6E93A0" aria-hidden="true">
+            <span class="campo__marca">Al aire libre</span>
+          </div>
+          <div class="ficha__cuerpo">
+            <div class="ficha__alto">
+              <h3 class="ficha__titulo">Terraza Vapor</h3>
+              <span class="ficha__precio">80 personas</span>
+            </div>
+            <p class="ficha__texto">
+              Al aire libre, con vista al jardin y cocina de apoyo a un costado.
+              La opcion para coctel, presentaciones de producto y activaciones de marca.
+            </p>
+            <div class="ficha__pie">
+              <span class="ficha__duracion">210 m2 &middot; techo retractil</span>
+              <button class="btn btn--fantasma btn--pequeno" type="button"
+                      data-reservar data-tipo="Evento"
+                      data-titulo="Terraza Vapor"
+                      data-glosa="Hasta 80 personas. Bloque de cuatro horas con montaje incluido.">
+                <span class="btn__texto">Apartar</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" style="--tono:var(--oro)" data-revelar="1">
+          <div class="ficha__campo campo" style="--tono:var(--oro);--tono-2:var(--brasa)" aria-hidden="true">
+            <span class="campo__marca">Principal</span>
+          </div>
+          <div class="ficha__cuerpo">
+            <div class="ficha__alto">
+              <h3 class="ficha__titulo">Salon Basalto</h3>
+              <span class="ficha__precio">140 personas</span>
+            </div>
+            <p class="ficha__texto">
+              Espacio principal con doble altura, piso de madera y control total de luz.
+              Se divide en dos mitades independientes con panel acustico.
+            </p>
+            <div class="ficha__pie">
+              <span class="ficha__duracion">320 m2 &middot; divisible</span>
+              <button class="btn btn--fantasma btn--pequeno" type="button"
+                      data-reservar data-tipo="Evento"
+                      data-titulo="Salon Basalto"
+                      data-glosa="Hasta 140 personas. Bloque de cuatro horas con montaje incluido.">
+                <span class="btn__texto">Apartar</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" style="--tono:var(--brasa)" data-revelar="2">
+          <div class="ficha__campo campo" style="--tono:var(--brasa);--tono-2:#B98652" aria-hidden="true">
+            <span class="campo__marca">Cerrado</span>
+          </div>
+          <div class="ficha__cuerpo">
+            <div class="ficha__alto">
+              <h3 class="ficha__titulo">Estudio Brasa</h3>
+              <span class="ficha__precio">40 personas</span>
+            </div>
+            <p class="ficha__texto">
+              Sala cerrada con proyeccion, audio y pizarron de pared a pared.
+              Para juntas de trabajo, talleres y sesiones privadas de entrenamiento.
+            </p>
+            <div class="ficha__pie">
+              <span class="ficha__duracion">95 m2 &middot; con proyeccion</span>
+              <button class="btn btn--fantasma btn--pequeno" type="button"
+                      data-reservar data-tipo="Evento"
+                      data-titulo="Estudio Brasa"
+                      data-glosa="Hasta 40 personas. Bloque de cuatro horas con montaje incluido.">
+                <span class="btn__texto">Apartar</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--basalto">
+    <div class="contenedor">
+      <div class="partido" data-form-bloque>
+        <div data-revelar="0">
+          <span class="clave seccion__clave clave--oro">Cotizacion</span>
+          <h2>Cuentanos que estas armando.</h2>
+          <p class="prosa" style="margin-top:var(--e5)">
+            Respondemos con disponibilidad, precio cerrado y propuesta de menu en menos
+            de veinticuatro horas habiles. Sin llamadas de seguimiento no solicitadas.
+          </p>
+
+          <div style="margin-top:var(--e7)">
+            <div class="dato-bloque">
+              <span class="dato-bloque__clave">Bloque minimo</span>
+              <p class="dato-bloque__valor">Cuatro horas, montaje y desmontaje incluidos</p>
+            </div>
+            <div class="dato-bloque">
+              <span class="dato-bloque__clave">Catering</span>
+              <p class="dato-bloque__valor">De nuestra cocina, con opciones veganas y sin gluten</p>
+            </div>
+            <div class="dato-bloque">
+              <span class="dato-bloque__clave">Anticipacion</span>
+              <p class="dato-bloque__valor">Dos semanas para eventos de mas de 60 personas</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-revelar="1">
+          <form class="formulario" data-form-demo novalidate>
+            <div class="campo-form">
+              <label class="etiqueta-form" for="ev-nombre">Nombre</label>
+              <input class="entrada" type="text" id="ev-nombre" name="nombre" placeholder="Tu nombre" required minlength="2">
+              <span class="error-form" data-error="nombre"></span>
+            </div>
+
+            <div class="campo-form campo-form--doble">
+              <div class="campo-form">
+                <label class="etiqueta-form" for="ev-correo">Correo</label>
+                <input class="entrada" type="email" id="ev-correo" name="correo" placeholder="tu@correo.com" required>
+                <span class="error-form" data-error="correo"></span>
+              </div>
+              <div class="campo-form">
+                <label class="etiqueta-form" for="ev-personas">Personas</label>
+                <input class="entrada" type="number" id="ev-personas" name="personas" placeholder="40" min="10" max="140" required>
+                <span class="error-form" data-error="personas"></span>
+              </div>
+            </div>
+
+            <div class="campo-form campo-form--doble">
+              <div class="campo-form">
+                <label class="etiqueta-form" for="ev-salon">Salon</label>
+                <select class="entrada" id="ev-salon" name="salon" required>
+                  <option value="">Elige uno</option>
+                  <option>Terraza Vapor</option>
+                  <option>Salon Basalto</option>
+                  <option>Estudio Brasa</option>
+                  <option>No estoy seguro</option>
+                </select>
+                <span class="error-form" data-error="salon"></span>
+              </div>
+              <div class="campo-form">
+                <label class="etiqueta-form" for="ev-fecha">Fecha tentativa</label>
+                <input class="entrada" type="date" id="ev-fecha" name="fecha" required>
+                <span class="error-form" data-error="fecha"></span>
+              </div>
+            </div>
+
+            <div class="campo-form">
+              <label class="etiqueta-form" for="ev-detalle">Que tienes en mente</label>
+              <textarea class="entrada" id="ev-detalle" name="detalle" placeholder="Tipo de evento, horario, si necesitas catering o proyeccion"></textarea>
+            </div>
+
+            <button class="btn btn--primario btn--ancho" type="submit">
+              <span class="btn__texto">Pedir cotizacion</span>
+              <span class="btn__flecha" aria-hidden="true">&rarr;</span>
+            </button>
+          </form>
+
+          <div data-form-respuesta></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <div class="cierre__campo" aria-hidden="true"></div>
+    <div class="contenedor contenedor--angosto">
+      <span class="clave clave--oro" data-revelar="0" style="margin-bottom:var(--e5)">Primera visita</span>
+      <h2 class="cierre__titulo" data-revelar="1">Ven a ver los salones montados.</h2>
+      <p class="guia" style="margin-inline:auto" data-revelar="2">Agenda un recorrido y te mostramos los tres espacios con el montaje que estas considerando.</p>
+      <div class="cierre__acciones" data-revelar="3">
+        <button class="btn btn--primario" type="button"
+                data-reservar data-tipo="Visita guiada"
+                data-titulo="Recorrido de salones"
+                data-glosa="Treinta minutos para ver los tres espacios y revisar propuesta de menu.">
+          <span class="btn__texto">Reservar mi visita</span>
+          <span class="btn__flecha" aria-hidden="true">&rarr;</span>
+        </button>
+        <a class="btn btn--fantasma" href="membresias.html">
+          <span class="btn__texto">Ver membresias</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <a class="marca" href="index.html">
+          <span class="marca__nombre">ZONZEN</span>
+          <span class="marca__tipo">Wellness Center</span>
+        </a>
+        <p class="prosa" style="margin-top:var(--e5);font-size:var(--fs-sm)">
+          Calor, agua, movimiento y reposo bajo un mismo techo.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Espacios</h3>
+        <div class="pie__lista">
+          <a href="gimnasio.html">Gimnasio y clases</a>
+          <a href="spa.html">Spa y masajes</a>
+          <a href="cafeteria.html">Cafeteria</a>
+          <a href="eventos.html">Salon de eventos</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Visitar</h3>
+        <div class="pie__lista">
+          <a href="membresias.html">Membresias</a>
+          <a href="contacto.html">Contacto</a>
+          <span>Lun a vie &middot; 05:30 &mdash; 23:00</span>
+          <span>Sab y dom &middot; 07:00 &mdash; 20:00</span>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Contacto</h3>
+        <div class="pie__lista">
+          <span>Av. Las Fuentes 218</span>
+          <span>Col. Jardines &middot; 64620</span>
+          <a href="tel:+528112345678">+52 81 1234 5678</a>
+          <a href="mailto:hola@zonzen.mx">hola@zonzen.mx</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pie__base">
+      <span>&copy; 2026 Zonzen Wellness Center</span>
+      <span class="pie__aviso">Demo &middot; sitio de demostracion, sin operacion real</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/datos.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

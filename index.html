@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zonzen · Wellness Center</title>
+<meta name="description" content="Gimnasio, clases, spa con circuito termico, cafeteria saludable y salon de eventos. Un solo recorrido por el cuerpo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<!-- ===================== Cabecera ===================== -->
+<header class="cabecera">
+  <div class="contenedor cabecera__barra">
+    <a class="marca" href="index.html">
+      <span class="marca__nombre">ZONZEN</span>
+      <span class="marca__tipo">Wellness Center</span>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__enlace" href="gimnasio.html">Gimnasio y clases</a>
+      <a class="nav__enlace" href="spa.html">Spa</a>
+      <a class="nav__enlace" href="cafeteria.html">Cafeteria</a>
+      <a class="nav__enlace" href="eventos.html">Eventos</a>
+      <a class="nav__enlace" href="membresias.html">Membresias</a>
+    </nav>
+
+    <div class="cabecera__acciones">
+      <button class="contador solo-escritorio" type="button" data-contador>
+        <span>Reservas</span>
+        <span class="contador__num">0</span>
+      </button>
+      <a class="btn btn--primario btn--pequeno solo-escritorio" href="contacto.html">
+        <span class="btn__texto">Visita gratis</span>
+      </a>
+      <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== Menu movil ===================== -->
+<div class="nav-movil" id="menu-movil">
+  <a class="nav-movil__enlace" href="gimnasio.html"><span>Gimnasio y clases</span><span class="nav-movil__clave">Fuerza</span></a>
+  <a class="nav-movil__enlace" href="spa.html"><span>Spa</span><span class="nav-movil__clave">Reposo</span></a>
+  <a class="nav-movil__enlace" href="cafeteria.html"><span>Cafeteria</span><span class="nav-movil__clave">Mesa</span></a>
+  <a class="nav-movil__enlace" href="eventos.html"><span>Eventos</span><span class="nav-movil__clave">Salon</span></a>
+  <a class="nav-movil__enlace" href="membresias.html"><span>Membresias</span><span class="nav-movil__clave">Planes</span></a>
+  <a class="nav-movil__enlace" href="contacto.html"><span>Contacto</span><span class="nav-movil__clave">Visita</span></a>
+
+  <div class="nav-movil__pie">
+    <button class="contador" type="button" data-contador>
+      <span>Mis reservas</span>
+      <span class="contador__num">0</span>
+    </button>
+  </div>
+</div>
+
+<main id="principal">
+
+  <!-- ===================== Hero ===================== -->
+  <section class="hero">
+    <div class="hero__campo" aria-hidden="true"></div>
+
+    <div class="contenedor">
+      <div class="hero__cuerpo">
+        <span class="clave clave--marca entra" data-entrada="120">Un lugar · cinco maneras</span>
+
+        <h1 class="hero__titulo">
+          <span class="linea entra" data-entrada="220"><span>Calor, agua,</span></span>
+          <span class="linea entra" data-entrada="330"><span>movimiento</span></span>
+          <span class="linea entra" data-entrada="440"><span>y <span class="acento">reposo</span>.</span></span>
+        </h1>
+
+        <p class="guia entra" data-entrada="580">
+          Zonzen no es un gimnasio que ademas tiene spa. Es un recorrido por el cuerpo:
+          entrenas, comes bien y te recuperas en el mismo edificio, el mismo dia.
+        </p>
+
+        <div class="hero__acciones entra" data-entrada="700">
+          <button class="btn btn--primario" type="button"
+                  data-reservar data-tipo="Visita guiada"
+                  data-titulo="Recorrido por Zonzen"
+                  data-glosa="Cuarenta minutos con un coach: conoces las cuatro areas y pruebas el circuito.">
+            <span class="btn__texto">Reservar visita</span>
+            <span class="btn__flecha" aria-hidden="true">→</span>
+          </button>
+          <a class="enlace-linea" href="spa.html">
+            <span>Conocer el circuito</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ===== EL CIRCUITO: ordena los cinco espacios por intensidad ===== -->
+      <nav class="circuito hero__pie" aria-label="Recorrido Zonzen">
+        <div class="circuito__leyenda" aria-hidden="true">
+          <span>← Reposo</span>
+          <span>Esfuerzo →</span>
+        </div>
+
+        <div class="circuito__pista">
+          <div class="circuito__riel" aria-hidden="true"></div>
+
+          <ul class="circuito__nodos">
+            <li class="nodo" style="--tono:var(--salvia)">
+              <a class="nodo__enlace" href="spa.html">
+                <span class="nodo__punto" aria-hidden="true"></span>
+                <span class="nodo__meta">
+                  <span class="nodo__clave">Reposo</span>
+                  <span class="nodo__nombre">Spa</span>
+                  <span class="nodo__glosa">Sauna, vapor, jacuzzi y tinas frias.</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="nodo" style="--tono:#6E93A0">
+              <a class="nodo__enlace" href="spa.html#masajes">
+                <span class="nodo__punto" aria-hidden="true"></span>
+                <span class="nodo__meta">
+                  <span class="nodo__clave">Manos</span>
+                  <span class="nodo__nombre">Masajes</span>
+                  <span class="nodo__glosa">Seis tecnicas, de relajante a descontracturante.</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="nodo" style="--tono:var(--oro)">
+              <a class="nodo__enlace" href="cafeteria.html">
+                <span class="nodo__punto" aria-hidden="true"></span>
+                <span class="nodo__meta">
+                  <span class="nodo__clave">Mesa</span>
+                  <span class="nodo__nombre">Cafeteria</span>
+                  <span class="nodo__glosa">Carta con macros a la vista, sin letra chica.</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="nodo" style="--tono:#B98652">
+              <a class="nodo__enlace" href="gimnasio.html#horario">
+                <span class="nodo__punto" aria-hidden="true"></span>
+                <span class="nodo__meta">
+                  <span class="nodo__clave">Ritmo</span>
+                  <span class="nodo__nombre">Clases</span>
+                  <span class="nodo__glosa">Cycling, yoga, zumba y funcional.</span>
+                </span>
+              </a>
+            </li>
+
+            <li class="nodo" style="--tono:var(--brasa)">
+              <a class="nodo__enlace" href="gimnasio.html">
+                <span class="nodo__punto" aria-hidden="true"></span>
+                <span class="nodo__meta">
+                  <span class="nodo__clave">Fuerza</span>
+                  <span class="nodo__nombre">Gimnasio</span>
+                  <span class="nodo__glosa">Peso libre, aparatos y piso de cardio.</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ===================== Cifras ===================== -->
+  <section class="seccion seccion--compacta">
+    <div class="contenedor">
+      <div class="rejilla rejilla--4">
+        <div class="cifra" data-revelar="0">
+          <span class="cifra__valor dato">1 800</span>
+          <span class="cifra__etiqueta">Metros cuadrados</span>
+        </div>
+        <div class="cifra" data-revelar="1">
+          <span class="cifra__valor dato">32</span>
+          <span class="cifra__etiqueta">Clases por semana</span>
+        </div>
+        <div class="cifra" data-revelar="2">
+          <span class="cifra__valor dato">5</span>
+          <span class="cifra__etiqueta">Paradas de circuito</span>
+        </div>
+        <div class="cifra" data-revelar="3">
+          <span class="cifra__valor dato">05:30</span>
+          <span class="cifra__etiqueta">Abrimos entre semana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Los cinco espacios ===================== -->
+  <section class="seccion">
+    <div class="contenedor">
+      <header class="seccion__cabecera seccion__cabecera--partida" data-revelar="0">
+        <div>
+          <span class="clave seccion__clave">Los espacios</span>
+          <h2>Cada area resuelve una parte del dia.</h2>
+        </div>
+        <p class="prosa">
+          Estan pensadas para encadenarse. Entrenas a las siete, desayunas a las ocho
+          y bajas al circuito el sabado sin salir del edificio.
+        </p>
+      </header>
+
+      <div class="espacios">
+
+        <article class="espacio" style="--tono:var(--brasa)" data-revelar="0">
+          <div class="espacio__campo campo" style="--tono:var(--brasa);--tono-2:#B98652" aria-hidden="true"></div>
+          <span class="clave espacio__clave">Fuerza</span>
+          <h3 class="espacio__titulo">Gimnasio completo</h3>
+          <p class="espacio__texto">
+            Peso libre con seis racks y plataformas, linea completa de peso integrado
+            y un piso de cardio con vista al jardin. Sin fila para la barra.
+          </p>
+          <div class="espacio__marcas">
+            <span class="marca-lista">Peso libre</span>
+            <span class="marca-lista">Aparatos</span>
+            <span class="marca-lista">Cardio</span>
+          </div>
+          <div class="espacio__pie">
+            <span class="espacio__dato">05:30 — 23:00</span>
+            <span class="enlace-linea"><span>Ver el piso</span><span aria-hidden="true">→</span></span>
+          </div>
+          <a class="cubre" href="gimnasio.html"><span class="solo-lectores">Gimnasio completo</span></a>
+        </article>
+
+        <article class="espacio" style="--tono:var(--salvia)" data-revelar="1">
+          <div class="espacio__campo campo" style="--tono:var(--salvia);--tono-2:#6E93A0" aria-hidden="true"></div>
+          <span class="clave espacio__clave">Reposo</span>
+          <h3 class="espacio__titulo">Spa y circuito</h3>
+          <p class="espacio__texto">
+            Sauna seco, vapor con eucalipto, jacuzzi y tinas frias en secuencia.
+          </p>
+          <div class="espacio__marcas">
+            <span class="marca-lista">Circuito</span>
+            <span class="marca-lista">6 masajes</span>
+          </div>
+          <div class="espacio__pie">
+            <span class="espacio__dato">Cabinas privadas</span>
+            <span class="enlace-linea"><span>Entrar</span><span aria-hidden="true">→</span></span>
+          </div>
+          <a class="cubre" href="spa.html"><span class="solo-lectores">Spa y circuito</span></a>
+        </article>
+
+        <article class="espacio" style="--tono:#B98652" data-revelar="2">
+          <div class="espacio__campo campo" style="--tono:#B98652;--tono-2:var(--brasa)" aria-hidden="true"></div>
+          <span class="clave espacio__clave">Ritmo</span>
+          <h3 class="espacio__titulo">Clases</h3>
+          <p class="espacio__texto">
+            Cycling, yoga, zumba y funcional. Cupo real, coach fijo.
+          </p>
+          <div class="espacio__marcas">
+            <span class="marca-lista">32 por semana</span>
+          </div>
+          <div class="espacio__pie">
+            <span class="espacio__dato">Cupo limitado</span>
+            <span class="enlace-linea"><span>Horario</span><span aria-hidden="true">→</span></span>
+          </div>
+          <a class="cubre" href="gimnasio.html#horario"><span class="solo-lectores">Clases</span></a>
+        </article>
+
+        <article class="espacio" style="--tono:var(--oro)" data-revelar="3">
+          <div class="espacio__campo campo" style="--tono:var(--oro);--tono-2:var(--salvia)" aria-hidden="true"></div>
+          <span class="clave espacio__clave">Mesa</span>
+          <h3 class="espacio__titulo">Cafeteria</h3>
+          <p class="espacio__texto">
+            Bowls, batidos y snacks con los macros impresos en la carta.
+          </p>
+          <div class="espacio__marcas">
+            <span class="marca-lista">Sin gluten</span>
+            <span class="marca-lista">Vegano</span>
+          </div>
+          <div class="espacio__pie">
+            <span class="espacio__dato">06:00 — 21:00</span>
+            <span class="enlace-linea"><span>La carta</span><span aria-hidden="true">→</span></span>
+          </div>
+          <a class="cubre" href="cafeteria.html"><span class="solo-lectores">Cafeteria</span></a>
+        </article>
+
+        <article class="espacio" style="--tono:#6E93A0" data-revelar="4">
+          <div class="espacio__campo campo" style="--tono:#6E93A0;--tono-2:var(--oro)" aria-hidden="true"></div>
+          <span class="clave espacio__clave">Salon</span>
+          <h3 class="espacio__titulo">Eventos</h3>
+          <p class="espacio__texto">
+            Tres espacios para juntas, talleres y celebraciones.
+          </p>
+          <div class="espacio__marcas">
+            <span class="marca-lista">Hasta 140</span>
+          </div>
+          <div class="espacio__pie">
+            <span class="espacio__dato">Con catering</span>
+            <span class="enlace-linea"><span>Cotizar</span><span aria-hidden="true">→</span></span>
+          </div>
+          <a class="cubre" href="eventos.html"><span class="solo-lectores">Eventos</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== El circuito termico ===================== -->
+  <section class="seccion seccion--basalto">
+    <div class="contenedor">
+      <div class="partido">
+        <div data-revelar="0">
+          <span class="clave seccion__clave clave--oro">El circuito</span>
+          <h2>De 90 grados a 12, en veinte minutos.</h2>
+          <p class="prosa" style="margin-top:var(--e5)">
+            La terapia de contraste no es un extra del spa: es el metodo. Se sube la
+            temperatura central en el sauna o el vapor, se sostiene en el jacuzzi y se
+            corta en las tinas frias. Repetir el ciclo dos o tres veces es lo que baja
+            la inflamacion despues de entrenar.
+          </p>
+          <p class="prosa">
+            En Zonzen las cinco paradas estan en la misma sala, en el orden correcto,
+            con los tiempos senalados en cada puerta.
+          </p>
+          <div style="margin-top:var(--e6)">
+            <a class="btn btn--fantasma" href="spa.html">
+              <span class="btn__texto">Ver el circuito completo</span>
+              <span class="btn__flecha" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div data-revelar="1">
+          <ul class="escala" style="display:grid;gap:var(--e1)">
+            <li class="parada" style="--tono:var(--brasa)">
+              <span class="parada__grados">90&thinsp;°C</span>
+              <span class="parada__nombre">Sauna seco</span>
+            </li>
+            <li class="parada" style="--tono:#B98652">
+              <span class="parada__grados">45&thinsp;°C</span>
+              <span class="parada__nombre">Vapor con eucalipto</span>
+            </li>
+            <li class="parada" style="--tono:var(--oro)">
+              <span class="parada__grados">38&thinsp;°C</span>
+              <span class="parada__nombre">Jacuzzi</span>
+            </li>
+            <li class="parada" style="--tono:var(--salvia)">
+              <span class="parada__grados">34&thinsp;°C</span>
+              <span class="parada__nombre">Tinas de hidromasaje</span>
+            </li>
+            <li class="parada" style="--tono:#6E93A0">
+              <span class="parada__grados">12&thinsp;°C</span>
+              <span class="parada__nombre">Tinas frias</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Hoy en Zonzen ===================== -->
+  <section class="seccion">
+    <div class="contenedor">
+      <header class="seccion__cabecera seccion__cabecera--partida" data-revelar="0">
+        <div>
+          <span class="clave seccion__clave">Hoy</span>
+          <h2>Lo que sigue en el tablero.</h2>
+        </div>
+        <p class="prosa">
+          <span class="dato" data-hoy-etiqueta style="color:var(--oro)">Cargando…</span><br>
+          Reserva desde aqui: el lugar queda apartado a tu nombre.
+        </p>
+      </header>
+
+      <ul class="dia__clases" data-hoy data-revelar="1"></ul>
+
+      <div style="margin-top:var(--e6)">
+        <a class="enlace-linea" href="gimnasio.html#horario">
+          <span>Ver la semana completa</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Membresias ===================== -->
+  <section class="seccion seccion--basalto">
+    <div class="contenedor">
+      <header class="seccion__cabecera seccion__cabecera--partida" data-revelar="0">
+        <div>
+          <span class="clave seccion__clave">Membresias</span>
+          <h2>Tres planes, un mismo edificio.</h2>
+        </div>
+        <p class="prosa">
+          La diferencia no es cuanto entrenas, sino hasta donde llega tu recorrido:
+          solo movimiento, movimiento con circuito, o el plan que ademas incluye masajes.
+        </p>
+      </header>
+
+      <div class="rejilla rejilla--3">
+        <article class="tarjeta" style="--tono:var(--brasa)" data-revelar="0">
+          <span class="clave tarjeta__clave">Desde $899 / mes</span>
+          <h3 class="tarjeta__titulo">Movimiento</h3>
+          <p class="tarjeta__texto">Gimnasio y clases ilimitadas, sin restriccion de horario.</p>
+        </article>
+        <article class="tarjeta" style="--tono:var(--oro)" data-revelar="1">
+          <span class="clave tarjeta__clave">Desde $1,499 / mes · mas elegido</span>
+          <h3 class="tarjeta__titulo">Circuito</h3>
+          <p class="tarjeta__texto">Todo lo anterior mas el circuito de spa ilimitado y 15 % en cafeteria.</p>
+        </article>
+        <article class="tarjeta" style="--tono:var(--salvia)" data-revelar="2">
+          <span class="clave tarjeta__clave">Desde $1,899 / mes</span>
+          <h3 class="tarjeta__titulo">Reposo</h3>
+          <p class="tarjeta__texto">Dos masajes al mes, terapeuta asignado y reserva prioritaria.</p>
+        </article>
+      </div>
+
+      <div style="margin-top:var(--e6)">
+        <a class="btn btn--fantasma" href="membresias.html">
+          <span class="btn__texto">Comparar los tres planes</span>
+          <span class="btn__flecha" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Cierre ===================== -->
+  <section class="cierre">
+    <div class="cierre__campo" aria-hidden="true"></div>
+    <div class="contenedor contenedor--angosto">
+      <span class="clave clave--oro" data-revelar="0" style="margin-bottom:var(--e5)">Primera visita</span>
+      <h2 class="cierre__titulo" data-revelar="1">Ven un dia. Recorre el circuito completo.</h2>
+      <p class="guia" style="margin-inline:auto" data-revelar="2">
+        Cuarenta minutos con un coach: conoces el piso de fuerza, tomas una clase
+        y terminas en el sauna. Sin costo y sin compromiso de firma.
+      </p>
+      <div class="cierre__acciones" data-revelar="3">
+        <button class="btn btn--primario" type="button"
+                data-reservar data-tipo="Visita guiada"
+                data-titulo="Recorrido por Zonzen"
+                data-glosa="Cuarenta minutos con un coach: conoces las cuatro areas y pruebas el circuito.">
+          <span class="btn__texto">Reservar mi visita</span>
+          <span class="btn__flecha" aria-hidden="true">→</span>
+        </button>
+        <a class="btn btn--fantasma" href="contacto.html">
+          <span class="btn__texto">Escribirnos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== Pie ===================== -->
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <a class="marca" href="index.html">
+          <span class="marca__nombre">ZONZEN</span>
+          <span class="marca__tipo">Wellness Center</span>
+        </a>
+        <p class="prosa" style="margin-top:var(--e5);font-size:var(--fs-sm)">
+          Calor, agua, movimiento y reposo bajo un mismo techo.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Espacios</h3>
+        <div class="pie__lista">
+          <a href="gimnasio.html">Gimnasio y clases</a>
+          <a href="spa.html">Spa y masajes</a>
+          <a href="cafeteria.html">Cafeteria</a>
+          <a href="eventos.html">Salon de eventos</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Visitar</h3>
+        <div class="pie__lista">
+          <a href="membresias.html">Membresias</a>
+          <a href="contacto.html">Contacto</a>
+          <span>Lun a vie · 05:30 — 23:00</span>
+          <span>Sab y dom · 07:00 — 20:00</span>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Contacto</h3>
+        <div class="pie__lista">
+          <span>Av. Las Fuentes 218</span>
+          <span>Col. Jardines · 64620</span>
+          <a href="tel:+528112345678">+52 81 1234 5678</a>
+          <a href="mailto:hola@zonzen.mx">hola@zonzen.mx</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pie__base">
+      <span>© 2026 Zonzen Wellness Center</span>
+      <span class="pie__aviso">Demo · sitio de demostracion, sin operacion real</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/datos.js"></script>
+<script src="js/main.js"></script>
+<script src="js/horario.js"></script>
+</body>
+</html>

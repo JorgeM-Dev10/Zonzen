@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gimnasio y clases &middot; Zonzen</title>
+<meta name="description" content="Peso libre, peso integrado, cardio y 32 clases por semana: cycling, yoga, zumba y funcional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor cabecera__barra">
+    <a class="marca" href="index.html">
+      <span class="marca__nombre">ZONZEN</span>
+      <span class="marca__tipo">Wellness Center</span>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__enlace" href="gimnasio.html" aria-current="page">Gimnasio y clases</a>
+      <a class="nav__enlace" href="spa.html">Spa</a>
+      <a class="nav__enlace" href="cafeteria.html">Cafeteria</a>
+      <a class="nav__enlace" href="eventos.html">Eventos</a>
+      <a class="nav__enlace" href="membresias.html">Membresias</a>
+    </nav>
+
+    <div class="cabecera__acciones">
+      <button class="contador solo-escritorio" type="button" data-contador>
+        <span>Reservas</span>
+        <span class="contador__num">0</span>
+      </button>
+      <a class="btn btn--primario btn--pequeno solo-escritorio" href="contacto.html">
+        <span class="btn__texto">Visita gratis</span>
+      </a>
+      <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-movil" id="menu-movil">
+  <a class="nav-movil__enlace" href="gimnasio.html"><span>Gimnasio y clases</span><span class="nav-movil__clave">Fuerza</span></a>
+  <a class="nav-movil__enlace" href="spa.html"><span>Spa</span><span class="nav-movil__clave">Reposo</span></a>
+  <a class="nav-movil__enlace" href="cafeteria.html"><span>Cafeteria</span><span class="nav-movil__clave">Mesa</span></a>
+  <a class="nav-movil__enlace" href="eventos.html"><span>Eventos</span><span class="nav-movil__clave">Salon</span></a>
+  <a class="nav-movil__enlace" href="membresias.html"><span>Membresias</span><span class="nav-movil__clave">Planes</span></a>
+  <a class="nav-movil__enlace" href="contacto.html"><span>Contacto</span><span class="nav-movil__clave">Visita</span></a>
+
+  <div class="nav-movil__pie">
+    <button class="contador" type="button" data-contador>
+      <span>Mis reservas</span>
+      <span class="contador__num">0</span>
+    </button>
+  </div>
+</div>
+
+<main id="principal">
+
+  <section class="portico" style="--ambiente:var(--brasa)">
+    <div class="portico__campo" aria-hidden="true"></div>
+    <div class="contenedor">
+      <div class="portico__rejilla">
+        <div>
+          <nav class="portico__migas" aria-label="Ruta">
+            <a href="index.html">Zonzen</a>
+            <span aria-hidden="true">/</span>
+            <span>Gimnasio y clases</span>
+          </nav>
+          <h1 class="portico__titulo entra" data-entrada="120">El piso y el tablero.</h1>
+        </div>
+        <p class="guia entra" data-entrada="260">Peso libre, peso integrado y cardio en un solo nivel. Arriba, cuatro salas con cupo real y coach fijo: nadie entrena esperando turno.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <header class="seccion__cabecera seccion__cabecera--partida" data-revelar="0">
+        <div>
+          <span class="clave seccion__clave">El piso</span>
+          <h2>Tres zonas, sin cruce de trafico.</h2>
+        </div>
+        <p class="prosa">
+          El piso esta dividido para que la gente que carga no estorbe a la que hace
+          cardio, y para que el area de movilidad tenga su propio espacio.
+        </p>
+      </header>
+
+      <div class="rejilla rejilla--3">
+        <article class="ficha" style="--tono:var(--brasa)" data-revelar="0">
+          <div class="ficha__campo campo" style="--tono:var(--brasa);--tono-2:#B98652" aria-hidden="true">
+            <span class="campo__marca">Zona 1</span>
+          </div>
+          <div class="ficha__cuerpo">
+            <div class="ficha__alto"><h3 class="ficha__titulo">Peso libre</h3></div>
+            <p class="ficha__texto">
+              Seis racks con plataforma, barras olimpicas calibradas, mancuernas de 2 a 50 kg
+              y dos bancos ajustables por rack. Piso de caucho de 20 mm para peso muerto.
+            </p>
+            <div class="ficha__pie">
+              <span class="ficha__duracion">6 racks &middot; 2 plataformas</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" style="--tono:var(--oro)" data-revelar="1">
+          <div class="ficha__campo campo" style="--tono:var(--oro);--tono-2:var(--brasa)" aria-hidden="true">
+            <span class="campo__marca">Zona 2</span>
+          </div>
+          <div class="ficha__cuerpo">
+            <div class="ficha__alto"><h3 class="ficha__titulo">Peso integrado</h3></div>
+            <p class="ficha__texto">
+              Linea completa de aparatos por grupo muscular, con carga en placas y ajuste
+              guiado. Cada maquina tiene el rango de movimiento senalado en la placa.
+            </p>
+            <div class="ficha__pie">
+              <span class="ficha__duracion">28 estaciones</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="ficha" style="--tono:var(--salvia)" data-revelar="2">
+          <div class="ficha__campo campo" style="--tono:var(--salvia);--tono-2:#6E93A0" aria-hidden="true">
+            <span class="campo__marca">Zona 3</span>
+          </div>
+          <div class="ficha__cuerpo">
+            <div class="ficha__alto"><h3 class="ficha__titulo">Cardiovascular</h3></div>
+            <p class="ficha__texto">
+              Caminadoras, eliptica, remo, escaladora y bicicleta de aire frente al ventanal
+              del jardin. Todas con lectura de frecuencia cardiaca en pantalla.
+            </p>
+            <div class="ficha__pie">
+              <span class="ficha__duracion">34 equipos</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion seccion--compacta seccion--basalto">
+    <div class="contenedor">
+      <div class="rejilla rejilla--4">
+        <div class="cifra" data-revelar="0">
+          <span class="cifra__valor dato">05:30</span>
+          <span class="cifra__etiqueta">Abre entre semana</span>
+        </div>
+        <div class="cifra" data-revelar="1">
+          <span class="cifra__valor dato">23:00</span>
+          <span class="cifra__etiqueta">Cierra entre semana</span>
+        </div>
+        <div class="cifra" data-revelar="2">
+          <span class="cifra__valor dato">4</span>
+          <span class="cifra__etiqueta">Salas de clase</span>
+        </div>
+        <div class="cifra" data-revelar="3">
+          <span class="cifra__valor dato">9</span>
+          <span class="cifra__etiqueta">Coaches certificados</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="horario">
+    <div class="contenedor">
+      <header class="seccion__cabecera seccion__cabecera--partida" data-revelar="0">
+        <div>
+          <span class="clave seccion__clave">El tablero</span>
+          <h2>Horario de la semana.</h2>
+        </div>
+        <p class="prosa">
+          Filtra por disciplina o por nivel. Las clases marcadas como llenas siguen
+          aceptando lista de espera: te avisamos si se libera un lugar.
+        </p>
+      </header>
+
+      <div data-revelar="0" style="margin-bottom:var(--e5)">
+        <div class="filtros">
+          <button class="filtro" type="button" data-filtro-disciplina="todas" aria-pressed="true">Todas</button>
+          <button class="filtro" type="button" data-filtro-disciplina="cycling" aria-pressed="false">Cycling</button>
+          <button class="filtro" type="button" data-filtro-disciplina="yoga" aria-pressed="false">Yoga</button>
+          <button class="filtro" type="button" data-filtro-disciplina="zumba" aria-pressed="false">Zumba</button>
+          <button class="filtro" type="button" data-filtro-disciplina="funcional" aria-pressed="false">Funcional</button>
+          <span class="filtros__cuenta" data-horario-cuenta></span>
+        </div>
+
+        <div class="filtros" style="margin-top:var(--e3)">
+          <button class="filtro" type="button" data-filtro-nivel="todos" aria-pressed="true">Todos los niveles</button>
+          <button class="filtro" type="button" data-filtro-nivel="principiante" aria-pressed="false">Principiante</button>
+          <button class="filtro" type="button" data-filtro-nivel="intermedio" aria-pressed="false">Intermedio</button>
+          <button class="filtro" type="button" data-filtro-nivel="avanzado" aria-pressed="false">Avanzado</button>
+        </div>
+      </div>
+
+      <div class="horario" data-horario data-revelar="1"></div>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <div class="cierre__campo" aria-hidden="true"></div>
+    <div class="contenedor contenedor--angosto">
+      <span class="clave clave--oro" data-revelar="0" style="margin-bottom:var(--e5)">Primera visita</span>
+      <h2 class="cierre__titulo" data-revelar="1">Prueba una clase antes de decidir.</h2>
+      <p class="guia" style="margin-inline:auto" data-revelar="2">Elige cualquier clase del tablero y reserva un lugar de cortesia. Si te gusta, activamos la membresia el mismo dia.</p>
+      <div class="cierre__acciones" data-revelar="3">
+        <button class="btn btn--primario" type="button"
+                data-reservar data-tipo="Visita guiada"
+                data-titulo="Clase de prueba"
+                data-glosa="Elige la disciplina y el horario. Llega quince minutos antes para la valoracion.">
+          <span class="btn__texto">Reservar mi visita</span>
+          <span class="btn__flecha" aria-hidden="true">&rarr;</span>
+        </button>
+        <a class="btn btn--fantasma" href="membresias.html">
+          <span class="btn__texto">Ver membresias</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <a class="marca" href="index.html">
+          <span class="marca__nombre">ZONZEN</span>
+          <span class="marca__tipo">Wellness Center</span>
+        </a>
+        <p class="prosa" style="margin-top:var(--e5);font-size:var(--fs-sm)">
+          Calor, agua, movimiento y reposo bajo un mismo techo.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Espacios</h3>
+        <div class="pie__lista">
+          <a href="gimnasio.html">Gimnasio y clases</a>
+          <a href="spa.html">Spa y masajes</a>
+          <a href="cafeteria.html">Cafeteria</a>
+          <a href="eventos.html">Salon de eventos</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Visitar</h3>
+        <div class="pie__lista">
+          <a href="membresias.html">Membresias</a>
+          <a href="contacto.html">Contacto</a>
+          <span>Lun a vie &middot; 05:30 &mdash; 23:00</span>
+          <span>Sab y dom &middot; 07:00 &mdash; 20:00</span>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Contacto</h3>
+        <div class="pie__lista">
+          <span>Av. Las Fuentes 218</span>
+          <span>Col. Jardines &middot; 64620</span>
+          <a href="tel:+528112345678">+52 81 1234 5678</a>
+          <a href="mailto:hola@zonzen.mx">hola@zonzen.mx</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pie__base">
+      <span>&copy; 2026 Zonzen Wellness Center</span>
+      <span class="pie__aviso">Demo &middot; sitio de demostracion, sin operacion real</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/datos.js"></script>
+<script src="js/main.js"></script>
+<script src="js/horario.js"></script>
+</body>
+</html>

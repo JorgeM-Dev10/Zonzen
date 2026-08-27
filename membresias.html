@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Membresias &middot; Zonzen</title>
+<meta name="description" content="Tres planes: Movimiento, Circuito y Reposo. Mensual o anual, sin contrato forzoso.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor cabecera__barra">
+    <a class="marca" href="index.html">
+      <span class="marca__nombre">ZONZEN</span>
+      <span class="marca__tipo">Wellness Center</span>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__enlace" href="gimnasio.html">Gimnasio y clases</a>
+      <a class="nav__enlace" href="spa.html">Spa</a>
+      <a class="nav__enlace" href="cafeteria.html">Cafeteria</a>
+      <a class="nav__enlace" href="eventos.html">Eventos</a>
+      <a class="nav__enlace" href="membresias.html" aria-current="page">Membresias</a>
+    </nav>
+
+    <div class="cabecera__acciones">
+      <button class="contador solo-escritorio" type="button" data-contador>
+        <span>Reservas</span>
+        <span class="contador__num">0</span>
+      </button>
+      <a class="btn btn--primario btn--pequeno solo-escritorio" href="contacto.html">
+        <span class="btn__texto">Visita gratis</span>
+      </a>
+      <button class="hamburguesa" type="button" aria-expanded="false" aria-controls="menu-movil" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-movil" id="menu-movil">
+  <a class="nav-movil__enlace" href="gimnasio.html"><span>Gimnasio y clases</span><span class="nav-movil__clave">Fuerza</span></a>
+  <a class="nav-movil__enlace" href="spa.html"><span>Spa</span><span class="nav-movil__clave">Reposo</span></a>
+  <a class="nav-movil__enlace" href="cafeteria.html"><span>Cafeteria</span><span class="nav-movil__clave">Mesa</span></a>
+  <a class="nav-movil__enlace" href="eventos.html"><span>Eventos</span><span class="nav-movil__clave">Salon</span></a>
+  <a class="nav-movil__enlace" href="membresias.html"><span>Membresias</span><span class="nav-movil__clave">Planes</span></a>
+  <a class="nav-movil__enlace" href="contacto.html"><span>Contacto</span><span class="nav-movil__clave">Visita</span></a>
+
+  <div class="nav-movil__pie">
+    <button class="contador" type="button" data-contador>
+      <span>Mis reservas</span>
+      <span class="contador__num">0</span>
+    </button>
+  </div>
+</div>
+
+<main id="principal">
+
+  <section class="portico" style="--ambiente:var(--oro)">
+    <div class="portico__campo" aria-hidden="true"></div>
+    <div class="contenedor">
+      <div class="portico__rejilla">
+        <div>
+          <nav class="portico__migas" aria-label="Ruta">
+            <a href="index.html">Zonzen</a>
+            <span aria-hidden="true">/</span>
+            <span>Membresias</span>
+          </nav>
+          <h1 class="portico__titulo entra" data-entrada="120">Hasta donde llega tu recorrido.</h1>
+        </div>
+        <p class="guia entra" data-entrada="260">Los tres planes dan acceso completo al gimnasio y a las clases. La diferencia esta en la recuperacion: circuito de spa, masajes o ninguno de los dos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <header class="seccion__cabecera" data-revelar="0">
+        <div class="filtros" style="align-items:center">
+          <div class="interruptor" data-interruptor>
+            <span class="interruptor__pastilla" aria-hidden="true"></span>
+            <button class="interruptor__btn" type="button" data-periodo="mensual" aria-pressed="true">Mensual</button>
+            <button class="interruptor__btn" type="button" data-periodo="anual" aria-pressed="false">Anual</button>
+          </div>
+          <span class="ahorro">Anual: dos meses de regalo</span>
+        </div>
+      </header>
+
+      <div class="rejilla rejilla--3" data-planes></div>
+
+      <p class="prosa" style="margin-top:var(--e6);font-size:var(--fs-xs)">
+        Precios en pesos mexicanos, con IVA incluido. La inscripcion es de $499 y se
+        condona si activas el plan el dia de tu visita.
+      </p>
+    </div>
+  </section>
+
+  <section class="seccion seccion--basalto">
+    <div class="contenedor">
+      <header class="seccion__cabecera seccion__cabecera--partida" data-revelar="0">
+        <div>
+          <span class="clave seccion__clave">Comparativa</span>
+          <h2>Lado a lado.</h2>
+        </div>
+        <p class="prosa">
+          Lo que cambia entre planes, sin asteriscos. Si algo no aparece aqui,
+          esta incluido en los tres.
+        </p>
+      </header>
+
+      <div class="tabla-envoltorio" data-revelar="1">
+        <table class="tabla">
+          <thead>
+            <tr>
+              <th scope="col">Beneficio</th>
+              <th scope="col">Movimiento</th>
+              <th scope="col">Circuito</th>
+              <th scope="col">Reposo</th>
+            </tr>
+          </thead>
+          <tbody data-comparativa></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor contenedor--angosto">
+      <header class="seccion__cabecera" data-revelar="0">
+        <span class="clave seccion__clave">Dudas frecuentes</span>
+        <h2>Antes de firmar.</h2>
+      </header>
+
+      <div class="preguntas" data-revelar="1">
+        <details class="pregunta">
+          <summary class="pregunta__resumen">
+            <span>Hay contrato forzoso?</span>
+            <span class="pregunta__signo" aria-hidden="true">+</span>
+          </summary>
+          <p class="pregunta__cuerpo">
+            No en el plan mensual: avisas con quince dias y se cancela sin penalizacion.
+            El plan anual se paga por adelantado y por eso cuesta dos meses menos.
+          </p>
+        </details>
+
+        <details class="pregunta">
+          <summary class="pregunta__resumen">
+            <span>Puedo congelar la membresia?</span>
+            <span class="pregunta__signo" aria-hidden="true">+</span>
+          </summary>
+          <p class="pregunta__cuerpo">
+            Si, hasta dos meses al ano sin costo, por lesion, viaje o lo que necesites.
+            Se solicita en recepcion o por correo y aplica desde el siguiente corte.
+          </p>
+        </details>
+
+        <details class="pregunta">
+          <summary class="pregunta__resumen">
+            <span>El circuito de spa tiene limite de uso?</span>
+            <span class="pregunta__signo" aria-hidden="true">+</span>
+          </summary>
+          <p class="pregunta__cuerpo">
+            En los planes Circuito y Reposo es ilimitado. Solo pedimos reservar en fin de
+            semana, porque la sala tiene aforo de veinticuatro personas por turno.
+          </p>
+        </details>
+
+        <details class="pregunta">
+          <summary class="pregunta__resumen">
+            <span>Que pasa si quiero cambiar de plan?</span>
+            <span class="pregunta__signo" aria-hidden="true">+</span>
+          </summary>
+          <p class="pregunta__cuerpo">
+            Subes de plan cuando quieras y solo pagas la diferencia proporcional del mes
+            en curso. Para bajar de plan, el cambio aplica en el siguiente corte.
+          </p>
+        </details>
+
+        <details class="pregunta">
+          <summary class="pregunta__resumen">
+            <span>Los masajes del plan Reposo se acumulan?</span>
+            <span class="pregunta__signo" aria-hidden="true">+</span>
+          </summary>
+          <p class="pregunta__cuerpo">
+            Se acumulan hasta cuatro. A partir de ahi se vencen los mas antiguos, para que
+            la agenda de cabinas no se sature al final del ano.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <div class="cierre__campo" aria-hidden="true"></div>
+    <div class="contenedor contenedor--angosto">
+      <span class="clave clave--oro" data-revelar="0" style="margin-bottom:var(--e5)">Primera visita</span>
+      <h2 class="cierre__titulo" data-revelar="1">Decide despues de probarlo.</h2>
+      <p class="guia" style="margin-inline:auto" data-revelar="2">Reserva un recorrido de cuarenta minutos: piso de fuerza, una clase y el circuito completo. Sin costo y sin firma.</p>
+      <div class="cierre__acciones" data-revelar="3">
+        <button class="btn btn--primario" type="button"
+                data-reservar data-tipo="Visita guiada"
+                data-titulo="Recorrido por Zonzen"
+                data-glosa="Cuarenta minutos con un coach: conoces las cuatro areas y pruebas el circuito.">
+          <span class="btn__texto">Reservar mi visita</span>
+          <span class="btn__flecha" aria-hidden="true">&rarr;</span>
+        </button>
+        <a class="btn btn--fantasma" href="membresias.html">
+          <span class="btn__texto">Ver membresias</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div>
+        <a class="marca" href="index.html">
+          <span class="marca__nombre">ZONZEN</span>
+          <span class="marca__tipo">Wellness Center</span>
+        </a>
+        <p class="prosa" style="margin-top:var(--e5);font-size:var(--fs-sm)">
+          Calor, agua, movimiento y reposo bajo un mismo techo.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Espacios</h3>
+        <div class="pie__lista">
+          <a href="gimnasio.html">Gimnasio y clases</a>
+          <a href="spa.html">Spa y masajes</a>
+          <a href="cafeteria.html">Cafeteria</a>
+          <a href="eventos.html">Salon de eventos</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Visitar</h3>
+        <div class="pie__lista">
+          <a href="membresias.html">Membresias</a>
+          <a href="contacto.html">Contacto</a>
+          <span>Lun a vie &middot; 05:30 &mdash; 23:00</span>
+          <span>Sab y dom &middot; 07:00 &mdash; 20:00</span>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="pie__titulo">Contacto</h3>
+        <div class="pie__lista">
+          <span>Av. Las Fuentes 218</span>
+          <span>Col. Jardines &middot; 64620</span>
+          <a href="tel:+528112345678">+52 81 1234 5678</a>
+          <a href="mailto:hola@zonzen.mx">hola@zonzen.mx</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pie__base">
+      <span>&copy; 2026 Zonzen Wellness Center</span>
+      <span class="pie__aviso">Demo &middot; sitio de demostracion, sin operacion real</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/datos.js"></script>
+<script src="js/main.js"></script>
+<script src="js/membresias.js"></script>
+</body>
+</html>
